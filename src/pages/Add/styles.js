@@ -6,6 +6,11 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
+
+  @media screen and (max-width: 490px) {
+    flex-wrap: wrap;
+    flex-flow: wrap-reverse;
+  }
 `
 
 export const Poster = styled.div`
@@ -19,7 +24,8 @@ export const Poster = styled.div`
     top: 0;
     font-size: 5.5vw;
     margin: 20px 0 0;
-    color: ${COLORS.PRIMARY_BACKGROUND}
+    font-weight: 800;
+    color: ${COLORS.PRIMARY_BACKGROUND};
   }
 
   img {
@@ -28,5 +34,11 @@ export const Poster = styled.div`
     opacity: .4;
     object-fit: cover;
     object-position: center;
+  }
+
+  @media screen and (max-width: 490px) {
+    width: 90%;
+    margin: 0 auto 50px;
+    height: 30vh;
   }
 `

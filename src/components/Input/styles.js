@@ -45,4 +45,8 @@ export const Label = styled.span`
     props.big ? '16px' : props.isFocused || props.hasText ? '12px' : '12px'};
   background-color: ${props =>
       props.isFocused || props.hasText ? '#FFF' : 'transparent'};
+
+  ${props => props.header && `
+    top: ${props.isFocused || props.hasText ? '-5px' : '18px'}
+  `}
 `

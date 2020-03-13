@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import COLORS from '../../constants/colors'
 
 export const EmptyList = styled.img`
-  height: 35vh;
+  height: 30vh;
   margin: 15% auto;
   display: block;
   opacity: .2;
@@ -30,6 +30,12 @@ export const Item = styled(Link)`
   &:last-child {
     border-bottom: none;
   }
+
+  @media screen and (max-width: 490px) {
+    font-size: 4vw;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
 `
 
 export const Photo = styled.img`
@@ -40,13 +46,30 @@ export const Photo = styled.img`
   object-fit: cover;
   object-position: top;
   flex: 1;
+  
+  @media screen and (max-width: 490px) {
+  }
 `
 export const Name = styled.p`
   margin-left: 25px;
   max-width: 60%;
   flex: 2;
   font-weight: 800;
+  color: ${COLORS.PRIMARY_BACKGROUND};
+  text-transform: capitalize;
+
+  @media screen and (max-width: 490px) {
+    width: 100%;
+    flex: auto;
+    margin-left: 0;
+  }
 `
 export const Info = styled.span`
   flex: 2;
+
+  @media screen and (max-width: 490px) {
+    width: 100%;
+    flex: auto;
+    margin-left: 10px;
+  }
 `

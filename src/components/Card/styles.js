@@ -5,15 +5,19 @@ export const Container = styled.section`
   border-radius: 6px;
   box-shadow: 0px 5px 25px -5px #CCC;
   position: relative;
-  margin: 10px 30px 30px;
   background: #FFF;
+  margin: ${props => props.margin ? props.margin : '10px 30px 30px'};
   width: ${props => props.width ? props.width : 'fit-content'};
   height: ${props => props.height ? props.height : 'fit-content'};
   ${props => props.flex && `display: flex`};
-  ${props => props.minWidth && `min-width: ${props.minWidth}`}
-  ${props => props.maxWidth && `max-width: ${props.maxWidth}`}
-  ${props => props.minHeight && `min-height: ${props.minHeight}`}
-  ${props => props.maxHeight && `max-height: ${props.maxHeight}`}
+  ${props => props.minWidth && `min-width: ${props.minWidth}`};
+  ${props => props.maxWidth && `max-width: ${props.maxWidth}`};
+  ${props => props.minHeight && `min-height: ${props.minHeight}`};
+  ${props => props.maxHeight && `max-height: ${props.maxHeight}`};
+
+  @media screen and (max-width: 490px) {
+    width: 100%;
+  }
 `
 
 export const Title = styled.div`
@@ -24,6 +28,12 @@ export const Title = styled.div`
   color: ${COLORS.PRIMARY_BACKGROUND};
   display: flex;
   justify-content: space-between;
+
+
+  @media screen and (max-width: 490px) {
+    font-size: 5vw;
+    flex-wrap: wrap;
+  }
 `
 
 export const Content = styled.div`
@@ -43,6 +53,10 @@ export const Content = styled.div`
   &::-webkit-scrollbar-thumb {
     background: ${COLORS.PRIMARY_BACKGROUND};
   }
+
+  @media screen and (max-width: 490px) {
+    height: 50vh
+  }
 `
 
 export const Hr = styled.hr`
@@ -53,4 +67,13 @@ export const Actions = styled.div`
   display: flex;
   justify-content: space-between;
   width: 50%;
+
+  @media screen and (max-width: 490px) {
+    flex-wrap: wrap;
+    width: 100%;
+
+    input, button {
+      margin: 10px 0;
+    }
+  }
 `

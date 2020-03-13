@@ -17,6 +17,7 @@ function Input(props) {
         hasText={props.value}
         pointerEvents="none"
         big={props.big}
+        header={props.header}
       >
         {props.placeholder}
       </Label>

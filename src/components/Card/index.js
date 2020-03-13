@@ -18,6 +18,7 @@ function Card(props) {
       height={props.height}
       minHeight={props.minHeight}
       maxHeight={props.maxHeight}
+      margin={props.margin}
       flex={props.flex}
     >
       <Title>
@@ -33,6 +34,7 @@ function Card(props) {
               value={props.searchValue}
               placeholder="Pesquisar"
               width="45%"
+              header
             />
           )}
 

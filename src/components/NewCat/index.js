@@ -61,7 +61,7 @@ class NewCat extends Component {
           <Input 
             name="activity"
             value={this.state.activity}
-            placeholder="Activity"
+            placeholder="Favorite activity"
             onChange={handleChange} 
             width="100%" 
             required 
@@ -97,7 +97,7 @@ class NewCat extends Component {
           <Input 
             name="medRecord"
             value={this.state.medRecord}
-            placeholder="Medical Record"
+            placeholder="Medical record"
             onChange={handleChange} 
             width="49%" 
           />

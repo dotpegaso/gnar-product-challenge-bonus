@@ -7,15 +7,20 @@ export const Container = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 `
 export const Preview = styled.img`
-  width: 35%;
+  width: 36%;
   height: 75vh;
-  margin-right: 20px;
   object-fit: cover;
   object-position: center;
-  border-radius: 25px;
-  padding: 10px 0;
+  border-radius: 10px;
+
+  @media screen and (max-width: 490px) {
+    width: 90%;
+    margin: 0 auto 20px;
+    height: 30vh;
+  }
 `
 
 export const Box = styled.section`
@@ -25,6 +30,10 @@ export const Box = styled.section`
   flex-wrap: wrap;
   width: ${props => props.width ? props.width : `100%`};
   ${props => props.middle && `margin: 0 10px`};
+
+  @media screen and (max-width: 490px) {
+    width: 100%;
+  }
 `
 
 export const Subtitle = styled.p`
@@ -37,6 +46,10 @@ export const Subtitle = styled.p`
     margin: 10px 0;
     color: ${COLORS.PRIMARY_BACKGROUND};
   `}
+
+  @media screen and (max-width: 490px) {
+    width: 100%;
+  }
 `
 
 export const Fillbar = styled.div`
@@ -59,7 +72,7 @@ export const Gallery = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   width: calc(100% - 60px);
-  margin-bottom: 50px;
+  margin: 30px 0 50px;
 `
 
 export const GalleryThumb = styled.img`
@@ -69,5 +82,18 @@ export const GalleryThumb = styled.img`
   object-position: center;
   border-radius: 5px;
   display: block;
-  margin-right: 15px;
+  margin-right: 1.1vw;
+
+  @media screen and (max-width: 490px) {
+    width: 100%;
+    height: 20vh;
+    margin: 20px 0;
+  }
+`
+
+export const GalleryTitle = styled.h1`
+  font-size: 30px;
+  width: 100%;
+  margin-bottom: 25px;
+  color: ${COLORS.PRIMARY_BACKGROUND}
 `

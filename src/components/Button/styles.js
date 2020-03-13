@@ -32,6 +32,8 @@ const defaultStyle = css`
 
   @media screen and (max-width: 490px) {
     width: 100%;
+    padding: 8px;
+    border-radius: 5px;
   }
 `
 

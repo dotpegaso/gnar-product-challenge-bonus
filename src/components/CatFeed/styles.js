@@ -22,4 +22,8 @@ export const Anchor = styled.a`
   &:last-child {
     border-bottom: none;
   }
+
+  @media screen and (max-width: 490px) {
+    font-size: 4vw;
+  }
 `

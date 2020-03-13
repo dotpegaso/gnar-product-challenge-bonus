@@ -13,7 +13,8 @@ import {
   Fillbar,
   Gauge,
   Gallery,
-  GalleryThumb
+  GalleryThumb,
+  GalleryTitle
 } from './styles'
 
 function CatDetails(props) {
@@ -28,10 +29,11 @@ function CatDetails(props) {
       <Preview src={currentCat.photo} alt={currentCat.name} />
 
       <Card 
-        title={`Cat info - ${currentCat.name}`} 
-        width="55%" 
+        title={currentCat.name} 
+        width="55.5%" 
         height="75vh" 
-        contentHeight="65vh" 
+        contentHeight="65vh"
+        margin="0 30px"
         flexwrap
       >
         <Box>
@@ -115,6 +117,7 @@ function CatDetails(props) {
       </Card>
 
       <Gallery>
+        <GalleryTitle>SEE MORE CATS</GalleryTitle>
         { footerCats.map(cat => cat && (
           <Link key={cat.id} to={`/details/${cat.id}`}>
             <GalleryThumb src={cat.photo} alt="Next cat preview" />

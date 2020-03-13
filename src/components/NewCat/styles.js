@@ -14,6 +14,10 @@ export const Form = styled.form`
   button {
     margin-top: 15px;
   }
+
+  @media screen and (max-width: 490px) {
+    width: 100%;
+  }
 `
 
 export const Subtitle = styled.h2`

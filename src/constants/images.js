@@ -8,7 +8,7 @@ export default {
 
   // images
   LOGO: require('../assets/images/logo.svg'),
-  CATBASKET: require('../assets/images/catbasket.jpg'),
+  CATBASKET: require('../assets/images/catbasket.png'),
   ICON: require('../assets/images/icon.svg'),
   PURRRHAPS: require('../assets/images/purrrhaps.svg'),
 }
