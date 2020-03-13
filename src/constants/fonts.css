@@ -1,0 +1,24 @@
+@font-face {
+  font-family: fontBrown;
+  src: 
+    url('../assets/fonts/brown-regular.svg') format('svg'),
+    url('../assets/fonts/brown-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: norma;
+  font-display: swap;
+}
+
+/* Bennet display substitute */
+@font-face {
+  font-family: fontFrank;
+  src:
+    url('../assets/fonts/frank-ruh-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary-font: fontBrown;
+  --secondary-font: fontFrank;
+}
