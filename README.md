@@ -1,11 +1,11 @@
-# Gnar Technical Test
+# Gnar Technical Test - Bonus 💎
 
-![badge](https://img.shields.io/netlify/a5afa846-9cfc-4738-9635-f5dd88028095)
-![badge](https://img.shields.io/github/repo-size/dotpegaso/gnar-product-challenge)
-![badge](https://img.shields.io/github/languages/top/dotpegaso/gnar-product-challenge)
-![badge](https://img.shields.io/github/languages/code-size/dotpegaso/gnar-product-challenge)
+![badge](https://img.shields.io/netlify/77d06108-2035-44df-8e4b-357b950b3957)
+![badge](https://img.shields.io/github/repo-size/dotpegaso/gnar-product-challenge-bonus)
+![badge](https://img.shields.io/github/languages/top/dotpegaso/gnar-product-challenge-bonus)
+![badge](https://img.shields.io/github/languages/code-size/dotpegaso/gnar-product-challenge-bonus)
 
-This project was bootstrapped with [create-react-app](https://github.com/facebook/create-react-app)
+This project was bootstrapped with [create-react-app](https://github.com/facebook/create-react-app).
 
 ## Installation
 
@@ -22,6 +22,12 @@ Powered by [Rusky](https://github.com/typicode/husky) and [Commit Lint](https://
 ## Host
 
 This project is hosted by [Netlify](https://netlify.com) for free
+
+## Motivation
+
+Due to some design inconsistencies in the given layout, I decided to make a better reusable-component-based version of it.  
+
+![image](https://i.imgur.com/N1wKtCJ.png)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
