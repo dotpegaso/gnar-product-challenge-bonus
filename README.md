@@ -25,7 +25,7 @@ This project is hosted by [Netlify](https://netlify.com) for free
 
 ## Motivation
 
-Due to some design inconsistencies in the given layout, I decided to make a better reusable-component-based version of it.  
+Due to some UI inconsistencies in the given layout, I decided to make a better reusable-component-based version of it.  
 
 ![image](https://i.imgur.com/N1wKtCJ.png)
 
